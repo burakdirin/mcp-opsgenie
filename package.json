@@ -1,0 +1,74 @@
+{
+  "name": "mcp-opsgenie",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for OpsGenie incident management - provides tools, resources, and prompts for comprehensive alert handling",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "lint": "tsc --noEmit && echo 'Type check passed'",
+    "prepare": "npm run build"
+  },
+  "bin": {
+    "mcp-opsgenie": "dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.1",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.14",
+    "@types/node-fetch": "^2.6.12",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "opsgenie",
+    "incident-management",
+    "alerting",
+    "devops",
+    "monitoring",
+    "sre",
+    "claude",
+    "ai",
+    "incident-response",
+    "automation",
+    "atlassian"
+  ],
+  "author": "Burak Dirin <burakdirin@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/burakdirin/mcp-opsgenie.git"
+  },
+  "bugs": {
+    "url": "https://github.com/burakdirin/mcp-opsgenie/issues"
+  },
+  "homepage": "https://github.com/burakdirin/mcp-opsgenie#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "mcp": {
+    "name": "opsgenie-mcp-server",
+    "description": "OpsGenie incident management integration for MCP",
+    "version": "1.0.0",
+    "capabilities": {
+      "tools": true,
+      "resources": true,
+      "prompts": true
+    }
+  }
+}

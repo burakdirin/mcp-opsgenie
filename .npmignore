@@ -1,0 +1,42 @@
+# Source files
+src/
+tsconfig.json
+
+# Development files
+.git/
+.gitignore
+node_modules/
+
+# Build artifacts (keep in package)
+# dist/ - KEEP THIS
+
+# Documentation source files
+MCP.md
+llms-full.txt
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+test/
+tests/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Temporary files
+*.log
+*.tmp
+.env* 
